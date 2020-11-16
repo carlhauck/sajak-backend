@@ -1,0 +1,1 @@
+high_score = render partial: "high_score.json.jb", locals: { high_score: @high_score }
