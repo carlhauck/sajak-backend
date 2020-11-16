@@ -18,4 +18,9 @@ class Api::HighScoresController < ApplicationController
     end
   end
 
+  def destroy
+    @high_score = HighScore.find_by(id: params[:id])
+    @high_score.destroy
+  end
+
 end
