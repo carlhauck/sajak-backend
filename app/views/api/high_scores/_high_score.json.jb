@@ -2,6 +2,5 @@
   id: high_score.id,
   player: high_score.player,
   score: high_score.score,
-  game_id: high_score.game_id,
   created_at: high_score.created_at
 }
