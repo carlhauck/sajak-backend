@@ -9,7 +9,6 @@ class Api::HighScoresController < ApplicationController
     @high_score = HighScore.new(
       player: params[:player],
       score: params[:score],
-      game_id: params[:game_id]
     )
     if @high_score.save
       render "show.json.jb"

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_16_215845) do
+ActiveRecord::Schema.define(version: 2020_11_17_224329) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,9 +26,6 @@ ActiveRecord::Schema.define(version: 2020_11_16_215845) do
     t.integer "score"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "game_id"
-    t.index ["game_id"], name: "index_high_scores_on_game_id"
   end
 
-  add_foreign_key "high_scores", "games"
 end
