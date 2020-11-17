@@ -6,6 +6,5 @@ class CreateHighScores < ActiveRecord::Migration[6.0]
 
       t.timestamps
     end
-    add_reference :high_scores, :game, foreign_key: true
   end
 end
